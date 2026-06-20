@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .whatsapp-flotante{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.whatsapp-flotante:hover{
+    transform: scale(1.1);
+}
+      header img{
+    max-width:120px;
+    filter: brightness(0) invert(1);
+    position: relative;
+    top: 20px;
+}
+header{
+    padding-top: 80px;
+}
+     
+
+        .servicios .card:hover{
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+        .servicios h3{
+    font-size: 24px;
+}
+        footer{
+    background:#222;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+        h2{
+    position: relative;
+}
+
+h2::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:3px;
+    background:#28a745;
+    margin:10px auto;
+}
+        #testimonios .card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+        .card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+         section {
+    padding: 50px 20px;
+}
+#testimonios {
+    margin-bottom: 60px;
+}
+        footer {
+    margin-top: 50px;
+}
+        
+        #nosotros p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+        #testimonios strong {
+    color: #28a745;
+}
+
+#testimonios .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+    #testimonios h2 i {
+    margin-right: 10px;
+    font-size: 28px;
+    color: #28a745;
+}
+        
+        #testimonios {
+    text-align: center;
+}
+
+
+#testimonios .card {
+    display: inline-block;
+    width: 220px;
+    margin: 10px;
+    padding: 15px;
+   background-color: #f8f8f8b7;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: 0.3s;
+}
+        @media (max-width: 768px) {
+    .servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+    background-image: url('banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+   padding: 180px 20px 60px;
+    text-shadow: 4px 4px 12px rgba(0,0,0,0.9)
+}
+        
+        h1 {
+            margin: 0.2em 0;
+        }
+        nav {
+            margin: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1em;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        section {
+            padding: 1em;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+           } 
+           header img {
+    width: 180px;
+    border-radius: 10px;
+} 
+.servicios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white; 
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+
+
+#testimonios .card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 220px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.20);
+}
+
+
+#testimonios .card p {
+    font-style: italic;
+}
+            
+
+    header p {
+margin-top: 15px;
+    font-size: 22px;
+}
+.btn-whatsapp{
+    background:#25D366;
+    color:white;
+    padding:14px 35px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+    display:inline-block;
+    box-shadow:0 4px 12px rgba(37,211,102,0.3);
+    transition:0.3s;
+    font-size:18px;
+}
+
+#.btn-whatsapp{
+    background:#1ebe5d;
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(37,211,102,0.4);
+}
+#testimonios .card i{
+    font-size: 40px;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+#testimonios .card i{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+     
+    </style>
+</head>
+<body>
+    <a href="https://wa.me/50688888888"
+   class="whatsapp-flotante"
+   target="_blank">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+        style="width:35px;">
+</a>
+    <header>
+        <img src="logo.png" alt="Logo Salas Motors" style="max-width:120px">
+<h1>Salas Motors</h1>
+
+
+<p>Tu taller de confianza en Alajuela</p>
+</header>
+
+    <nav>
+      
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+       <section id="servicios">
+    
+
+    <div class="servicios">
+
+        <div class="card">
+            <h3>🔧 Cambio de aceite</h3>
+            <p>Mantenimiento para prolongar la vida del motor.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛑 Revisión de frenos</h3>
+            <p>Inspección y reparación del sistema de frenado.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚗 Diagnóstico</h3>
+            <p>Detección de fallas con equipos especializados.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚙️ Mantenimiento</h3>
+            <p>Servicio preventivo para evitar averías.</p>
+        </div>
+
+    </div>
+    <section id="testimonios">
+    <h2>
+        <i class="fa-solid fa-comment-dots"></i>
+        Testimonios
+    </h2>
+
+
+
+    <div class="card">
+        <i class="fa-solid fa-circle-user"></i>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>"Excelente servicio y atención rápida."</p>
+        <strong>- Carlos M.</strong>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-circle-user"></i>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>"Muy profesionales y honestos."</p>
+        <strong>- María R.</strong>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-circle-user"></i>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>"Recomendado al 100%."</p>
+        <strong>- José A.</strong>
+    </div>
+</section>
+
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+      <p>
+En Salas Motors nos especializamos en mantenimiento preventivo,
+diagnóstico y reparación de vehículos.
+</p>
+
+<p>
+Nuestro compromiso es brindar un servicio confiable,
+rápido y de calidad para que nuestros clientes conduzcan
+con total tranquilidad.
+</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+       <p>📍 Alajuela, Costa Rica /
+         <a href="https://www.google.com/maps/search/?api=1&query=Alajuela,CostaRica" target="_blank">Como Llegar</a></p>
+<p>📞 8888-8888</p>
+<p>🕒 Lunes a Sábado: 8:00 AM - 6:00 PM</p>
+        
+       
+        <a href="https://wa.me/50688888888" style="text-decoration: none; display: inline-flex; align-items: center; background-color: #25d366; color: white; padding: 10px 15px; border-radius: 5px;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="height: 20px; margin-right: 8px;">
+  WhatsApp
+</a>
+    <br><br>
+
+
+
+
+
+
+
+<footer>
+    <p>© 2026 Salas Motors - Todos los derechos reservados</p>
+</footer>
