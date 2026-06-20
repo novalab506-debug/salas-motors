@@ -48,7 +48,7 @@
             border-radius: 10px;
             filter: brightness(0) invert(1);
             position: relative;
-            margin-bottom: -15px; /* Acerca el logo al título */
+            margin-bottom: -15px; /* Mantiene el logo pegado a Salas Motors */
         }
         header h1 {
             margin: 0;
@@ -99,7 +99,34 @@
             font-size: 19px;
             margin: 0 0 10px 0;
             color: #000000;
-            white-space: nowrap; /* Evita que el icono y la palabra se separen en dos renglones */
+            display: flex;
+            flex-direction: column; /* Icono arriba y palabra abajo */
+            align-items: center;
+            gap: 5px;
+        }
+        #testimonios h2 i {
+            color: #1e7e34;
+            margin-right: 10px;
+        }
+        #testimonios .card {
+            text-align: left;
+            width: 240px;
+        }
+        #testimonios .card i {
+            font-size: 40px;
+            color: #1e7e34;
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #testimonios .card p {
+            font-style: italic;
+            margin: 5px 0;
+        }
+        #testimonios strong {
+            color: #1e7e34;
+            display: block;
+            margin-top: 10px;
         }
         #nosotros p {
             max-width: 700px;
@@ -168,11 +195,8 @@
                 align-items: center;
                 gap: 15px;
             }
-            .card {
+            .card, #testimonios .card {
                 width: 95%;
-            }
-            .servicios h3 {
-                white-space: normal;
             }
             section {
                 padding: 20px 15px;
@@ -194,6 +218,7 @@
 
     <nav aria-label="Menú principal de navegación">
         <a href="#servicios">Servicios</a>
+        <a href="#testimonios">Testimonios</a>
         <a href="#contacto">Contacto</a>
         <a href="#nosotros">Nosotros</a>
     </nav>
@@ -203,20 +228,44 @@
             <h2>Nuestros Servicios</h2>
             <div class="servicios">
                 <div class="card">
-                    <h3>🔧 Cambio de aceite</h3>
+                    <h3><span>🔧</span> <span>Cambio de aceite</span></h3>
                     <p>Mantenimiento para prolongar la vida del motor.</p>
                 </div>
                 <div class="card">
-                    <h3>🛑 Revisión de frenos</h3>
+                    <h3><span>🛑</span> <span>Revisión de frenos</span></h3>
                     <p>Inspección y reparación del sistema de frenado.</p>
                 </div>
                 <div class="card">
-                    <h3>🚗 Diagnóstico</h3>
+                    <h3><span>🚗</span> <span>Diagnóstico</span></h3>
                     <p>Detección de fallas con equipos especializados.</p>
                 </div>
                 <div class="card">
-                    <h3>⚙️ Mantenimiento</h3>
+                    <h3><span>⚙️</span> <span>Mantenimiento</span></h3>
                     <p>Servicio preventivo para evitar averías.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios">
+            <h2><i class="fa-solid fa-comment-dots" aria-hidden="true"></i>Testimonios</h2>
+            <div class="servicios">
+                <div class="card">
+                    <i class="fa-solid fa-circle-user" aria-hidden="true"></i>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"Excelente servicio y atención rápida."</p>
+                    <strong>- Carlos M.</strong>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-user" aria-hidden="true"></i>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"Muy profesionales y honestos."</p>
+                    <strong>- María R.</strong>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-user" aria-hidden="true"></i>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"Recomendado al 100%."</p>
+                    <strong>- José A.</strong>
                 </div>
             </div>
         </section>
