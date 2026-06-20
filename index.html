@@ -48,7 +48,7 @@
             border-radius: 10px;
             filter: brightness(0) invert(1);
             position: relative;
-            margin-bottom: -15px; /* Mantiene el logo pegado a Salas Motors */
+            margin-bottom: -5px;
         }
         header h1 {
             margin: 0;
@@ -99,10 +99,10 @@
             font-size: 19px;
             margin: 0 0 10px 0;
             color: #000000;
-            display: flex;
-            flex-direction: column; /* Icono arriba y palabra abajo */
-            align-items: center;
-            gap: 5px;
+        }
+        .servicios h3 span {
+            display: block; /* Forzar el salto de línea nativo (icono arriba, texto abajo) optimizando el rendimiento móvil */
+            margin-bottom: 5px;
         }
         #testimonios h2 i {
             color: #1e7e34;
@@ -228,19 +228,19 @@
             <h2>Nuestros Servicios</h2>
             <div class="servicios">
                 <div class="card">
-                    <h3><span>🔧</span> <span>Cambio de aceite</span></h3>
+                    <h3><span>🔧</span><span>Cambio de aceite</span></h3>
                     <p>Mantenimiento para prolongar la vida del motor.</p>
                 </div>
                 <div class="card">
-                    <h3><span>🛑</span> <span>Revisión de frenos</span></h3>
+                    <h3><span>🛑</span><span>Revisión de frenos</span></h3>
                     <p>Inspección y reparación del sistema de frenado.</p>
                 </div>
                 <div class="card">
-                    <h3><span>🚗</span> <span>Diagnóstico</span></h3>
+                    <h3><span>🚗</span><span>Diagnóstico</span></h3>
                     <p>Detección de fallas con equipos especializados.</p>
                 </div>
                 <div class="card">
-                    <h3><span>⚙️</span> <span>Mantenimiento</span></h3>
+                    <h3><span>⚙️</span><span>Mantenimiento</span></h3>
                     <p>Servicio preventivo para evitar averías.</p>
                 </div>
             </div>
