@@ -1,7 +1,3 @@
-Aquí tienes el ajuste exacto. Para poner el icono de la burbuja de chat de testimonios en verde igual al del usuario, solo debemos cambiar la regla de color de #testimonios h2 i.
-
-Este es tu código final optimizado para PageSpeed, Accesibilidad y con los colores unificados:
-
 HTML
 <!DOCTYPE html>
 <html lang="es">
@@ -43,7 +39,7 @@ HTML
             background-position: center;
             color: white;
             text-align: center;
-            padding: 140px 20px 40px;
+            padding: 240px 20px 20px;
             text-shadow: 4px 4px 12px rgba(0,0,0,0.9);
         }
         header img {
@@ -52,13 +48,14 @@ HTML
             border-radius: 10px;
             filter: brightness(0) invert(1);
             position: relative;
-            top: 20px;
+            margin-bottom: -15px; /* Acerca el logo al título */
         }
         header h1 {
-            margin: 0.2em 0;
+            margin: 0;
+            font-size: 32px;
         }
         header p {
-            margin-top: 15px;
+            margin: 5px 0 0 0;
             font-size: 22px;
         }
         nav {
@@ -99,33 +96,10 @@ HTML
             box-shadow: 0 12px 25px rgba(0,0,0,0.15);
         }
         .servicios h3 {
-            font-size: 20px;
+            font-size: 19px;
             margin: 0 0 10px 0;
             color: #000000;
-        }
-        #testimonios h2 i {
-            color: #1e7e34;
-            margin-right: 10px;
-        }
-        #testimonios .card {
-            text-align: left;
-            width: 240px;
-        }
-        #testimonios .card i {
-            font-size: 40px;
-            color: #1e7e34;
-            display: block;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        #testimonios .card p {
-            font-style: italic;
-            margin: 5px 0;
-        }
-        #testimonios strong {
-            color: #1e7e34;
-            display: block;
-            margin-top: 10px;
+            white-space: nowrap; /* Evita que el icono y la palabra se separen en dos renglones */
         }
         #nosotros p {
             max-width: 700px;
@@ -194,8 +168,11 @@ HTML
                 align-items: center;
                 gap: 15px;
             }
-            .card, #testimonios .card {
+            .card {
                 width: 95%;
+            }
+            .servicios h3 {
+                white-space: normal;
             }
             section {
                 padding: 20px 15px;
@@ -217,9 +194,8 @@ HTML
 
     <nav aria-label="Menú principal de navegación">
         <a href="#servicios">Servicios</a>
-        <a href="#testimonios">Testimonios</a>
-        <a href="#nosotros">Nosotros</a>
         <a href="#contacto">Contacto</a>
+        <a href="#nosotros">Nosotros</a>
     </nav>
 
     <main>
@@ -241,30 +217,6 @@ HTML
                 <div class="card">
                     <h3>⚙️ Mantenimiento</h3>
                     <p>Servicio preventivo para evitar averías.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonios">
-            <h2><i class="fa-solid fa-comment-dots" aria-hidden="true"></i>Testimonios</h2>
-            <div class="servicios">
-                <div class="card">
-                    <i class="fa-solid fa-circle-user" aria-hidden="true"></i>
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <p>"Excelente servicio y atención rápida."</p>
-                    <strong>- Carlos M.</strong>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-circle-user" aria-hidden="true"></i>
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <p>"Muy profesionales y honestos."</p>
-                    <strong>- María R.</strong>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-circle-user" aria-hidden="true"></i>
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <p>"Recomendado al 100%."</p>
-                    <strong>- José A.</strong>
                 </div>
             </div>
         </section>
