@@ -1,13 +1,13 @@
+HTML
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salas Motors: Taller mecánico de confianza en Alajuela, Costa Rica. Especialistas en cambio de aceite, revisión de frenos y diagnóstico automotriz profesional.">
     <title>Salas Motors | Taller Mecánico</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
     <style>
-        /* Estilos Generales */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -15,17 +15,14 @@
             background-color: #f5f5f5;
             color: #333;
         }
-        
         section {
-            padding: 60px 20px;
+            padding: 30px 20px;
             text-align: center;
         }
-
         h2 {
             position: relative;
-            margin-bottom: 30px;
+            margin: 0 0 20px 0;
         }
-
         h2::after {
             content: "";
             display: block;
@@ -34,41 +31,34 @@
             background: #28a745;
             margin: 10px auto 0;
         }
-
-        /* Encabezado y Navegación */
         header {
             background-image: url('banner.jpeg');
             background-size: cover;
             background-position: center;
             color: white;
             text-align: center;
-            padding: 180px 20px 60px;
+            padding: 140px 20px 40px;
             text-shadow: 4px 4px 12px rgba(0,0,0,0.9);
         }
-
         header img {
-            width: 180px;
-            max-width: 120px;
+            width: 120px;
+            height: 120px;
             border-radius: 10px;
             filter: brightness(0) invert(1);
             position: relative;
             top: 20px;
         }
-
         header h1 {
             margin: 0.2em 0;
         }
-
         header p {
             margin-top: 15px;
             font-size: 22px;
         }
-
         nav {
             margin: 1em 0;
             text-align: center;
         }
-
         nav a {
             margin: 0 1em;
             color: #333;
@@ -76,15 +66,13 @@
             font-weight: bold;
             font-size: 18px;
         }
-
-        /* Servicios y Tarjetas */
         .servicios {
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
+            margin-top: 10px;
         }
-
         .card {
             background: white; 
             padding: 20px;
@@ -94,43 +82,23 @@
             text-align: center;
             transition: 0.3s;
         }
-
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 12px 25px rgba(0,0,0,0.15);
         }
-
         .servicios h3 {
             font-size: 24px;
+            margin-top: 0;
         }
-
-        /* Testimonios */
-        #testimonios {
-            margin-bottom: 60px;
-        }
-
         #testimonios h2 i {
             margin-right: 10px;
             font-size: 28px;
             color: #28a745;
         }
-
         #testimonios .card {
-            display: inline-block;
-            background-color: #ffffff;
-            border-radius: 20px;
-            padding: 20px;
-            margin: 10px;
-            width: 220px;
             text-align: left;
             box-shadow: 0 6px 20px rgba(0,0,0,0.15);
         }
-
-        #testimonios .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.20);
-        }
-
         #testimonios .card i {
             font-size: 40px;
             color: #28a745;
@@ -138,44 +106,44 @@
             text-align: center;
             margin-bottom: 10px;
         }
-
         #testimonios .card p {
             font-style: italic;
+            margin: 5px 0;
         }
-
         #testimonios strong {
             color: #28a745;
+            display: block;
+            margin-top: 10px;
         }
-
-        /* Sobre Nosotros */
         #nosotros p {
             max-width: 700px;
             margin: 0 auto 15px;
             line-height: 1.8;
         }
-
-        /* Botones y Contacto */
-       .btn-whatsapp {
-    background-color: #25D366 !important; /* Verde brillante de WhatsApp */
-    color: white !important;
-    padding: 12px 25px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 12px rgba(37,211,102,0.3);
-    transition: 0.3s;
-    font-size: 18px;
-}
-
-.btn-whatsapp:hover {
-    background-color: #1ebe5d !important;
-    transform: translateY(-3px);
-}
-        
-
+        #contacto a {
+            color: #28a745;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn-whatsapp {
+            background-color: #25D366 !important;
+            color: white !important;
+            padding: 12px 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(37,211,102,0.3);
+            transition: 0.3s;
+            font-size: 18px;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1ebe5d !important;
+            color: white !important;
+            transform: translateY(-3px);
+        }
         .whatsapp-flotante {
             position: fixed;
             bottom: 20px;
@@ -193,54 +161,42 @@
             z-index: 1000;
             transition: 0.3s;
         }
-
         .whatsapp-flotante:hover {
             transform: scale(1.1);
         }
-
-        #contacto a {
-            color: #28a745;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Footer */
         footer {
             background: #222;
             color: white;
             padding: 20px;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 40px;
         }
-
-        /* Responsivo */
         @media (max-width: 768px) {
             .servicios {
                 flex-direction: column;
                 align-items: center;
             }
-
-            .card, #testimonios .card {
+            .card {
                 width: 90%;
-                margin-bottom: 20px;
             }
         }
     </style>
 </head>
 <body>
 
-    <a href="https://wa.me/50688888888" class="whatsapp-flotante" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:35px;">
+    <a href="https://wa.me/50688888888" class="whatsapp-flotante" target="_blank" aria-label="Contacto por WhatsApp flotante">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="35" height="35">
     </a>
 
     <header>
-        <img src="logo.png" alt="Logo Salas Motors">
+        <img src="logo.png" alt="Logo Salas Motors" width="120" height="120">
         <h1>Salas Motors</h1>
         <p>Tu taller de confianza en Alajuela</p>
     </header>
 
     <nav>
         <a href="#servicios">Servicios</a>
+        <a href="#testimonios">Testimonios</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#contacto">Contacto</a>
     </nav>
@@ -302,11 +258,11 @@
 
     <section id="contacto">
         <h2>Contacto</h2>
-        <p>📍 Alajuela, Costa Rica / <a href="https://google.com" target="_blank" rel="noopener" style="text-decoration: underline;">Cómo Llegar</a></p>
+        <p>📍 Alajuela, Costa Rica / <a href="https://google.com" target="_blank" rel="noopener" style="text-decoration: underline;" aria-label="Dirección de Salas Motors en Google Maps">Cómo Llegar</a></p>
         <p>📞 8888-8888</p>
         <p>🕒 Lunes a Sábado: 8:00 AM - 6:00 PM</p>
-        
-        <a href="https://wa.me" class="btn-whatsapp" target="_blank" rel="noopener">
+        <br>
+        <a href="https://wa.me/50688888888" class="btn-whatsapp" target="_blank" rel="noopener" aria-label="Enviar un mensaje de WhatsApp a Salas Motors">
             <i class="fa-brands fa-whatsapp" style="margin-right: 8px; font-size: 22px; vertical-align: middle;"></i>WhatsApp
         </a>
     </section>
