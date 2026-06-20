@@ -1,3 +1,7 @@
+Aquí tienes el ajuste exacto. Para poner el icono de la burbuja de chat de testimonios en verde igual al del usuario, solo debemos cambiar la regla de color de #testimonios h2 i.
+
+Este es tu código final optimizado para PageSpeed, Accesibilidad y con los colores unificados:
+
 HTML
 <!DOCTYPE html>
 <html lang="es">
@@ -6,14 +10,14 @@ HTML
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Salas Motors: Taller mecánico de confianza en Alajuela, Costa Rica. Especialistas en cambio de aceite, revisión de frenos y diagnóstico automotriz profesional.">
     <title>Salas Motors | Taller Mecánico</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            background-color: #ffffff;
+            color: #111111;
         }
         section {
             padding: 30px 20px;
@@ -22,13 +26,15 @@ HTML
         h2 {
             position: relative;
             margin: 0 0 20px 0;
+            font-size: 24px;
+            color: #000000;
         }
         h2::after {
             content: "";
             display: block;
             width: 60px;
             height: 3px;
-            background: #28a745;
+            background: #1e7e34;
             margin: 10px auto 0;
         }
         header {
@@ -61,47 +67,53 @@ HTML
         }
         nav a {
             margin: 0 1em;
-            color: #333;
+            color: #000000;
             text-decoration: none;
             font-weight: bold;
             font-size: 18px;
         }
+        nav a:hover {
+            text-decoration: underline;
+        }
         .servicios {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
-            margin-top: 10px;
+            margin: 0 auto;
+            max-width: 1100px;
         }
         .card {
-            background: white; 
+            background: #ffffff; 
             padding: 20px;
-            width: 220px;
+            width: 210px;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             text-align: center;
             transition: 0.3s;
+            border: 1px solid #eeeeee;
+            box-sizing: border-box;
         }
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 12px 25px rgba(0,0,0,0.15);
         }
         .servicios h3 {
-            font-size: 24px;
-            margin-top: 0;
+            font-size: 20px;
+            margin: 0 0 10px 0;
+            color: #000000;
         }
         #testimonios h2 i {
+            color: #1e7e34;
             margin-right: 10px;
-            font-size: 28px;
-            color: #28a745;
         }
         #testimonios .card {
             text-align: left;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            width: 240px;
         }
         #testimonios .card i {
             font-size: 40px;
-            color: #28a745;
+            color: #1e7e34;
             display: block;
             text-align: center;
             margin-bottom: 10px;
@@ -111,7 +123,7 @@ HTML
             margin: 5px 0;
         }
         #testimonios strong {
-            color: #28a745;
+            color: #1e7e34;
             display: block;
             margin-top: 10px;
         }
@@ -119,14 +131,15 @@ HTML
             max-width: 700px;
             margin: 0 auto 15px;
             line-height: 1.8;
+            font-size: 16px;
         }
         #contacto a {
-            color: #28a745;
+            color: #1e7e34;
             text-decoration: none;
             font-weight: bold;
         }
         .btn-whatsapp {
-            background-color: #25D366 !important;
+            background-color: #1e7e34 !important;
             color: white !important;
             padding: 12px 25px;
             border-radius: 12px;
@@ -135,20 +148,19 @@ HTML
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 12px rgba(37,211,102,0.3);
+            box-shadow: 0 4px 12px rgba(30,126,52,0.3);
             transition: 0.3s;
             font-size: 18px;
         }
         .btn-whatsapp:hover {
-            background-color: #1ebe5d !important;
-            color: white !important;
+            background-color: #155724 !important;
             transform: translateY(-3px);
         }
         .whatsapp-flotante {
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background: #25D366;
+            background: #1e7e34;
             color: white;
             width: 60px;
             height: 60px;
@@ -169,23 +181,32 @@ HTML
             color: white;
             padding: 20px;
             text-align: center;
-            margin-top: 40px;
+            margin-top: 30px;
+        }
+        @media (max-width: 950px) {
+            .servicios {
+                justify-content: center;
+            }
         }
         @media (max-width: 768px) {
             .servicios {
                 flex-direction: column;
                 align-items: center;
+                gap: 15px;
             }
-            .card {
-                width: 90%;
+            .card, #testimonios .card {
+                width: 95%;
+            }
+            section {
+                padding: 20px 15px;
             }
         }
     </style>
 </head>
 <body>
 
-    <a href="https://wa.me/50688888888" class="whatsapp-flotante" target="_blank" aria-label="Contacto por WhatsApp flotante">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="35" height="35">
+    <a href="https://wa.me/50688888888" class="whatsapp-flotante" target="_blank" rel="noopener" aria-label="Chat de WhatsApp con Salas Motors">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Icono de WhatsApp" width="35" height="35" loading="lazy">
     </a>
 
     <header>
@@ -194,78 +215,77 @@ HTML
         <p>Tu taller de confianza en Alajuela</p>
     </header>
 
-    <nav>
+    <nav aria-label="Menú principal de navegación">
         <a href="#servicios">Servicios</a>
         <a href="#testimonios">Testimonios</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#contacto">Contacto</a>
     </nav>
 
-    <section id="servicios">
-        <h2>Nuestros Servicios</h2>
-        <div class="servicios">
-            <div class="card">
-                <h3>🔧 Cambio de aceite</h3>
-                <p>Mantenimiento para prolongar la vida del motor.</p>
+    <main>
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios">
+                <div class="card">
+                    <h3>🔧 Cambio de aceite</h3>
+                    <p>Mantenimiento para prolongar la vida del motor.</p>
+                </div>
+                <div class="card">
+                    <h3>🛑 Revisión de frenos</h3>
+                    <p>Inspección y reparación del sistema de frenado.</p>
+                </div>
+                <div class="card">
+                    <h3>🚗 Diagnóstico</h3>
+                    <p>Detección de fallas con equipos especializados.</p>
+                </div>
+                <div class="card">
+                    <h3>⚙️ Mantenimiento</h3>
+                    <p>Servicio preventivo para evitar averías.</p>
+                </div>
             </div>
-            <div class="card">
-                <h3>🛑 Revisión de frenos</h3>
-                <p>Inspección y reparación del sistema de frenado.</p>
-            </div>
-            <div class="card">
-                <h3>🚗 Diagnóstico</h3>
-                <p>Detección de fallas con equipos especializados.</p>
-            </div>
-            <div class="card">
-                <h3>⚙️ Mantenimiento</h3>
-                <p>Servicio preventivo para evitar averías.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="testimonios">
-        <h2>
-            <i class="fa-solid fa-comment-dots"></i>
-            Testimonios
-        </h2>
-        <div class="servicios">
-            <div class="card">
-                <i class="fa-solid fa-circle-user"></i>
-                <p>⭐⭐⭐⭐⭐</p>
-                <p>"Excelente servicio y atención rápida."</p>
-                <strong>- Carlos M.</strong>
+        <section id="testimonios">
+            <h2><i class="fa-solid fa-comment-dots" aria-hidden="true"></i>Testimonios</h2>
+            <div class="servicios">
+                <div class="card">
+                    <i class="fa-solid fa-circle-user" aria-hidden="true"></i>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"Excelente servicio y atención rápida."</p>
+                    <strong>- Carlos M.</strong>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-user" aria-hidden="true"></i>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"Muy profesionales y honestos."</p>
+                    <strong>- María R.</strong>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-circle-user" aria-hidden="true"></i>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"Recomendado al 100%."</p>
+                    <strong>- José A.</strong>
+                </div>
             </div>
-            <div class="card">
-                <i class="fa-solid fa-circle-user"></i>
-                <p>⭐⭐⭐⭐⭐</p>
-                <p>"Muy profesionales y honestos."</p>
-                <strong>- María R.</strong>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-circle-user"></i>
-                <p>⭐⭐⭐⭐⭐</p>
-                <p>"Recomendado al 100%."</p>
-                <strong>- José A.</strong>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="nosotros">
-        <h2>Sobre Nosotros</h2>
-        <p>En Salas Motors nos especializamos en mantenimiento preventivo, diagnóstico y reparación de vehículos.</p>
-        <p>Nuestro compromiso es brindar un servicio confiable, rápido y de calidad para que nuestros clientes conduzcan con total tranquilidad.</p>
-    </section>
+        <section id="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>En Salas Motors nos especializamos en mantenimiento preventivo, diagnóstico y reparación de vehículos.</p>
+            <p>Nuestro compromiso es brindar un servicio confiable, rápido y de calidad para que nuestros clientes conduzcan con total tranquilidad.</p>
+        </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>📍 Alajuela, Costa Rica / <a href="https://google.com" target="_blank" rel="noopener" style="text-decoration: underline;" aria-label="Dirección de Salas Motors en Google Maps">Cómo Llegar</a></p>
-        <p>📞 8888-8888</p>
-        <p>🕒 Lunes a Sábado: 8:00 AM - 6:00 PM</p>
-        <br>
-        <a href="https://wa.me/50688888888" class="btn-whatsapp" target="_blank" rel="noopener" aria-label="Enviar un mensaje de WhatsApp a Salas Motors">
-            <i class="fa-brands fa-whatsapp" style="margin-right: 8px; font-size: 22px; vertical-align: middle;"></i>WhatsApp
-        </a>
-    </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>📍 Alajuela, Costa Rica / <a href="https://google.com" target="_blank" rel="noopener" aria-label="Ver ubicación de Salas Motors en Google Maps">Cómo Llegar</a></p>
+            <p>📞 8888-8888</p>
+            <p>🕒 Lunes a Sábado: 8:00 AM - 6:00 PM</p>
+            <br>
+            <a href="https://wa.me/50688888888" class="btn-whatsapp" target="_blank" rel="noopener" aria-label="Enviar un mensaje de WhatsApp directo al taller">
+                <i class="fa-brands fa-whatsapp" style="margin-right: 8px; font-size: 22px; vertical-align: middle;" aria-hidden="true"></i>WhatsApp
+            </a>
+        </section>
+    </main>
 
     <footer>
         <p>© 2026 Salas Motors - Todos los derechos reservados</p>
